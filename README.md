@@ -1,1 +1,2 @@
-# BMEventPlanners-github.io
+# BMEventPlanners.github.io
+Event Planners Website

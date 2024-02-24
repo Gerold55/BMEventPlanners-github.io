@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.google.com/specimen/Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>B&M | CONTACT US</title>
+</head>
+<body color>
+
+    <nav>
+
+        <div class="logo">
+            <h4>B&M Event Planners</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="reviews.html">TESTIMONIALS</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Contact Us for your Event needs!</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Your Phone Number" required>
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script src="nav.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "marleybeare56@gmail.com",
+                    Password: "7F1FFFE6441F4482DE128CEF2E1935C4B27D",
+                    To: 'bmeventplanners1508@gmail.com',
+                    From: document.getElementById("email").value,
+                    Subject: "New Contact Form Enquiry",
+                    Body: "Name:" + document.getElementById("name").value
+                        + "<br> Email: " + document.getElementById("email").value
+                        + "<br> Phone #: " + document.getElementById("phone").value
+                        + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                    message => alert("Message Sent Successfully!")
+                );
+            }
+    </script>
+
+</body>
+</html>

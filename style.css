@@ -1,0 +1,138 @@
+/* Reset CSS */
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the content */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center align the container */
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Home Page Styles */
+.home-content {
+    padding: 50px 0; /* Add padding to the content */
+    text-align: center; /* Center align the content */
+}
+
+.services-title {
+    font-size: 28px; /* Increase font size for services title */
+    margin-bottom: 30px; /* Add margin bottom for spacing */
+}
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align service items */
+}
+
+.service-item {
+    width: 300px; /* Adjust width of service items */
+    margin: 0 20px 20px;
+    text-align: center; /* Center align text within service items */
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    line-height: 1.6; /* Adjust line height for readability */
+    text-align: justify; /* Justify-align the paragraphs */
+    max-width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center the paragraphs */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Center align the text */
+    margin-top: auto; /* Footer sticks to the bottom */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.footer-contact {
+    display: flex; /* Display contact details horizontally */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.footer-contact p {
+    margin: 0 10px; /* Add margin between contact details */
+}
